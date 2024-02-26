@@ -117,32 +117,6 @@ def inverse_normal(X, method='Blom', repeat_val=False):
         
     return X_trans
 
-import scipy.io as sio
-import matplotlib
 
-
-# data_folder = '/Users/ing/Desktop/Desktop_mac_korbel33/TCGA/omics_data/omics_pancancer/BRCA/'
-
-# Gen_Data = sio.loadmat(data_folder + '/omics_train_full_top_anno_efficientnetB0.mat')
-
-# rnaseq_train = Gen_Data['RNA_data_train']
-# mut_train = Gen_Data['mut_data_train']
-# methylation_train = Gen_Data['methylation_data_train']
-# mirna_train = Gen_Data['mirna_data_train']
-
-# histo_train5 = Gen_Data['histo_data_mag5_train']
-# histo_train10 = Gen_Data['histo_data_mag10_train']
-# histo_train20 = Gen_Data['histo_data_mag20_train']
-
-
-# rnaseq_trans = inverse_normal(rnaseq_train, repeat_val=True)
-
-# rna, c = np.unique(rnaseq_trans,axis=0, return_counts=True)
-
-# matplotlib.pyplot.hist(histo_train20[:,30])
-
-# histo_trans = inverse_normal(histo_train20)
-
-# matplotlib.pyplot.hist(histo_trans[:,30])
 
 
